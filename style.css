@@ -1,0 +1,131 @@
+    :root{
+      --Softblue: hsl(215, 51%, 70%);
+      --Cyan: hsl(178, 100%, 50%);
+      --Verydarkbluemain: hsl(217, 54%, 11%); /* (main BG) */
+      --Verydarkbluecard : hsl(216, 50%, 16%) ;    /*(card BG)*/
+      --Verydarkblue : hsl(215, 32%, 27%) ;/*(line)*/
+      --White: hsl(0, 0%, 100%);
+    }
+    .attribution {
+      position: fixed; 
+      font-size: 11px; text-align: center;
+     }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: var(--Verydarkbluemain);
+    padding: 1rem 1rem;
+      margin-top: 7%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+      font-family: Outfit , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.25em;
+    }
+    .Wrapper{
+      background-color:var(--Verydarkbluecard);
+      padding: 1.15em;
+      max-width: 15.5em;
+      aspect-ratio: 9/16 ;
+      border-radius: 0.75em;
+      box-shadow: 0px 35px 0px 20px hsl(217, 55%, 10%), 0px 20px 0px 45px hsl(214, 65%, 10%);
+    }
+
+    .Equilibrium{
+      color:var(--White);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1.15em;
+    }
+    .about{
+      word-wrap: break-word;
+      font-size: 0.95em;
+      color:var(--Softblue);
+      font-weight: 300;
+    }
+    hr{
+      margin-top: 10px;
+      height:1px;
+      border-width:0px;
+      color:var(--Verydarkblue);
+      background-color:var(--Verydarkblue);
+    }
+    .etherium-value{
+      color: var(--Cyan);
+      font-weight: 600;
+      font-size: 0.75em;
+    }
+    .Value{
+      display: flex;
+      justify-content: space-between;
+      color:var(--Cyan);
+      padding-bottom: 5px;
+    }
+    .time{
+      color: var(--Softblue);
+      font-weight: 400;
+      font-size: 0.75em;
+    }
+    .image-adjust{
+      margin-bottom: -2px;
+      margin-right: 6px;
+      width: 0.75em;
+    }
+    .time-img-adjust{
+      margin-right: 2px;
+      width: 1.25em;
+      margin-bottom: -3px;
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+    }
+    .profile-picture{
+      width: 1.65em;
+      border: 1.5px solid white;
+      border-radius: 50%;
+    }
+    .creator-section{
+      font-size: 0.85em;
+      font-weight: 400;
+      color: var(--Softblue);
+      margin-left: 14px;
+    }
+    .Creaters-name{
+    color: white;
+    cursor: pointer;
+    }
+    .Equilibrium:hover, .Creaters-name:hover{
+      color:var(--Cyan);
+    } 
+    .etherium-image{
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .main-img-adjust{
+      background-color:var(--Cyan);
+      height: 16em;
+      border-radius: 0.5em;
+      overflow: hidden;
+      cursor: pointer;
+      position:relative;
+    }
+    .view-icon, .etherium-image{
+      transition: opacity 0.15s linear;
+    }
+    .Equilibrium, .Creaters-name{
+      transition: color 0.15s linear;
+    }
+    .main-img-adjust:hover .etherium-image{
+      opacity: 0.4;
+    }
+    .view-icon{
+      width: 2.45em;
+      position: absolute;
+      top: 41%;
+      right: 42%;
+      opacity: 0;
+    }
+    .main-img-adjust:hover .view-icon{
+      opacity: 1;
+    }
